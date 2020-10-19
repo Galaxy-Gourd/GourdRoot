@@ -1,12 +1,11 @@
 {
-  "name": "com.galaxygourd.gourd_root",
+  "name": "com.galaxygourd.gourd_data",
   "version": "1.0.0",
-  "displayName": "Gourd Root",
-  "description": "Base root composition for GG packages.",
+  "displayName": "Gourd Data",
+  "description": "Base data structures for GG packages.",
   "unity": "2019.4",
   "author": {
     "name": "Michael Stephens",
     "email": "mstephens.dev@gmail.com"
-  },
-  "hideInEditor": false
+  }
 }

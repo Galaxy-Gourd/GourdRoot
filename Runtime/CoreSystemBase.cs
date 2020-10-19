@@ -27,7 +27,6 @@ namespace SharpCore
         protected CoreSystemBase(T data)
         {
             _systemData = data;
-            this.AssignCoreInterface();
         }
 
         #endregion Constructor
