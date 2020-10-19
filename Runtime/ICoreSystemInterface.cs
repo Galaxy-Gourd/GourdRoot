@@ -1,4 +1,4 @@
-namespace SharpCore
+namespace GGData
 {
     public interface ICoreSystemInterface
     {

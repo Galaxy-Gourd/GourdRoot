@@ -1,4 +1,4 @@
-namespace SharpCore.Data
+namespace GGData.Data
 {
     public abstract class BaseData
     {

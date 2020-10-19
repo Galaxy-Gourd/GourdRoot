@@ -1,6 +1,6 @@
-using SharpCore.Data;
+using GGData.Data;
 
-namespace SharpCore
+namespace GGData
 {
     /// <summary>
     /// Base class for core systems; ensures proper loading after creation.
