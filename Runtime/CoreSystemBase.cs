@@ -6,7 +6,10 @@ namespace GGData
     /// Base class for core systems; ensures proper loading after creation.
     /// </summary>
     /// <typeparam name="T">CoreSystemData type</typeparam>
-    public class CoreSystemBase <T> : ICoreSystemCallbacks where T : CoreSystemData
+    /// <typeparam name="C">ICoreSystemClient type</typeparam>
+    public class CoreSystemBase <T, C> : ICoreSystemCallbacks
+        where T : CoreSystemData
+        where C : ICoreSystemClient
     {
         #region Variables
 
@@ -14,6 +17,11 @@ namespace GGData
         /// The configuration data for this system.
         /// </summary>
         protected readonly T _systemData;
+        
+        /// <summary>
+        /// The configuration data for this system.
+        /// </summary>
+        protected readonly C _systemClient;
 
         #endregion Variables
 
@@ -24,9 +32,11 @@ namespace GGData
         /// Constructs the system with the system data.
         /// </summary>
         /// <param name="data">The system configuration data.</param>
-        protected CoreSystemBase(T data)
+        /// <param name="client">The system client receiving the initialization complete callback.</param>
+        protected CoreSystemBase(T data, C client)
         {
             _systemData = data;
+            _systemClient = client;
         }
 
         #endregion Constructor
