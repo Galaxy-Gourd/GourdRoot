@@ -1,6 +1,6 @@
 {
-    "name": "GG.Data",
-    "rootNamespace": "",
+    "name": "GG.SharpData",
+    "rootNamespace": "GGSharpData",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

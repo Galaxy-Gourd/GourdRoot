@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GGData.Data
+namespace GGSharpData
 { 
     public abstract class UnityConfigurationData : ScriptableObject
     {

@@ -1,4 +1,4 @@
-namespace GGData
+namespace GGSharpData
 {
     public interface ICoreSystemCallbacks
     {

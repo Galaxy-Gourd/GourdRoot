@@ -1,4 +1,4 @@
-namespace GGData.Data
+namespace GGSharpData
 {
     public abstract class ConfigurationData : BaseData
     {

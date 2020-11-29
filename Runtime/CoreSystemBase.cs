@@ -1,15 +1,11 @@
-using GGData.Data;
-
-namespace GGData
+namespace GGSharpData
 {
     /// <summary>
     /// Base class for core systems; ensures proper loading after creation.
     /// </summary>
     /// <typeparam name="T">CoreSystemData type</typeparam>
     /// <typeparam name="C">ICoreSystemClient type</typeparam>
-    public class CoreSystemBase <T, C> : ICoreSystemCallbacks
-        where T : CoreSystemData
-        where C : ICoreSystemClient
+    public class CoreSystemBase <T, C> : ICoreSystemCallbacks where C : ICoreSystemClient
     {
         #region Variables
 
