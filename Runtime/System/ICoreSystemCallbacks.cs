@@ -3,8 +3,13 @@ namespace GGSharpData
     public interface ICoreSystemCallbacks
     {
         /// <summary>
-        /// Called when all of the core systems have finished being constructed.
+        /// Called on the system when it has finished initialization.
         /// </summary>
-        void OnPostCoreSystemsInitialization();
+        void OnPostSystemInitialized();
+        
+        /// <summary>
+        /// Called when all of the core systems have finished initialization.
+        /// </summary>
+        void OnPostAllSystemsInitialized();
     }
 }

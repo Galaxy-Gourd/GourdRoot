@@ -5,17 +5,19 @@ namespace GGSharpData
     /// </summary>
     /// <typeparam name="T">CoreSystemData type</typeparam>
     /// <typeparam name="C">ICoreSystemClient type</typeparam>
-    public class CoreSystemBase <T, C> : ICoreSystemCallbacks where C : ICoreSystemClient
+    public abstract class CoreSystemBase <T, C> : ICoreSystem, ICoreSystemCallbacks 
+        where T : CoreSystemData
+        where C : ICoreSystemClient 
     {
         #region Variables
-
+        
         /// <summary>
         /// The configuration data for this system.
         /// </summary>
         protected readonly T _systemData;
         
         /// <summary>
-        /// The configuration data for this system.
+        /// The system client
         /// </summary>
         protected readonly C _systemClient;
 
@@ -40,11 +42,17 @@ namespace GGSharpData
 
         #region Callbacks
 
-        public virtual void OnPostCoreSystemsInitialization()
+        public virtual void OnPostSystemInitialized()
+        {
+            
+        }
+
+        public virtual void OnPostAllSystemsInitialized()
         {
             
         }
 
         #endregion Callbacks
+
     }
 }
