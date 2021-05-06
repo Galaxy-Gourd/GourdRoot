@@ -1,7 +1,7 @@
 namespace GGSharpData
 {
-    public abstract class BaseData
+    public interface IModule
     {
         
     }
-} 
+}

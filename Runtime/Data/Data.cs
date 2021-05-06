@@ -1,7 +1,7 @@
 namespace GGSharpData
 {
-    public interface ICoreSystem
+    public abstract class Data
     {
         
     }
-}
+} 
