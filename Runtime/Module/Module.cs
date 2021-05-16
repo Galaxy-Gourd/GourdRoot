@@ -4,20 +4,20 @@ namespace GGSharpData
     /// Base class for core module; ensures proper loading after creation.
     /// </summary>
     /// <typeparam name="T">DataConfigModule type</typeparam>
-    public abstract class Module <T> : IModule, IModuleCallbacks 
+    public abstract class Module<T> : IModule
         where T : DataConfigModule
     {
-        #region Variables
+        #region VARIABLES
         
         /// <summary>
         /// The configuration data for this module.
         /// </summary>
         protected readonly T _moduleData;
 
-        #endregion Variables
+        #endregion VARIABLES
 
 
-        #region Constructor
+        #region CONSTRUCTOR
 
         /// <summary>
         /// Constructs the module with the module data.
@@ -28,17 +28,16 @@ namespace GGSharpData
             _moduleData = data;
         }
 
-        #endregion Constructor
+        #endregion CONSTRUCTOR
 
 
-        #region Callbacks
+        #region CALLBACKS
 
-        public virtual void OnPostModuleInitialized()
+        public virtual void OnModuleClientReady()
         {
             
         }
 
-        #endregion Callbacks
-
+        #endregion CALLBACKS
     }
 }
