@@ -1,6 +1,6 @@
 using System;
 
-namespace GGSharpData
+namespace GG.Data.Base
 {
     public interface IModuleClient
     {

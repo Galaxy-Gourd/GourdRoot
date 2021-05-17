@@ -1,7 +1,7 @@
 
 using System;
 
-namespace GGSharpData
+namespace GG.Data.Base
 {
     /// <summary>
     /// Interface for telemetry; exposed to external classes to provide access to telemetry data.

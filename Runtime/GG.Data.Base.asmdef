@@ -1,6 +1,6 @@
 {
-    "name": "GG.SharpData",
-    "rootNamespace": "GGSharpData",
+    "name": "GG.Data.Base",
+    "rootNamespace": "GG.Data.Base",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

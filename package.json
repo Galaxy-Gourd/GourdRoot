@@ -1,7 +1,7 @@
 {
-  "name": "com.galaxygourd.ggsharpdata",
+  "name": "com.galaxygourd.ggdatabase",
   "version": "1.0.0",
-  "displayName": "GG Sharp Data",
+  "displayName": "GG Data Base",
   "description": "Base data structures for GG sharp packages.",
   "unity": "2019.4",
   "author": {

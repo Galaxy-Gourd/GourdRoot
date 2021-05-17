@@ -1,4 +1,4 @@
-namespace GGSharpData
+namespace GG.Data.Base
 {
     /// <summary>
     /// Base class for core module; ensures proper loading after creation.

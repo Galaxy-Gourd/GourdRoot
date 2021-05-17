@@ -1,4 +1,4 @@
-namespace GGSharpData
+namespace GG.Data.Base
 {
     public interface IModule
     {
