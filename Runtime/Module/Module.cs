@@ -26,6 +26,7 @@ namespace GG.Data.Base
         protected Module(T1 data, Action<T2>[] callbacks = null)
         {
             _callbacks = callbacks;
+            ID = data.ID;
         }
 
         /// <summary>
@@ -54,7 +55,17 @@ namespace GG.Data.Base
         {
 
         }
-
+        
         #endregion UPDATE
+
+
+        #region CLEANUP
+
+        public virtual void Cleanup()
+        {
+            
+        }
+
+        #endregion CLEANUP
     }
 }

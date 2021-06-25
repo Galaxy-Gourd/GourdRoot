@@ -17,6 +17,11 @@ namespace GG.Data.Base
         /// <param name="delta">Time (seconds) since previous tick</param>
         void Tick(float delta);
 
+        /// <summary>
+        /// Destroys and cleans the module
+        /// </summary>
+        void Cleanup();
+
         #endregion METHODS
     }
 }
