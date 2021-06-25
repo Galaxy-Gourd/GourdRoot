@@ -5,11 +5,13 @@ namespace GG.Data.Base
     /// <summary>
     /// Base class for core module; ensures proper loading after creation.
     /// </summary>
-    public abstract class Module<T1, T2>
+    public abstract class Module<T1, T2> : IModule
         where T1 : DataConfigModule
         where T2 : DataModuleInitialization
     {
         #region VARIABLES
+
+        public string ID { get; set; }
 
         private readonly Action<T2>[] _callbacks;
 
@@ -44,5 +46,15 @@ namespace GG.Data.Base
         }
 
         #endregion CONSTRUCTOR
+
+
+        #region UPDATE
+        
+        public virtual void Tick(float delta)
+        {
+
+        }
+
+        #endregion UPDATE
     }
 }
