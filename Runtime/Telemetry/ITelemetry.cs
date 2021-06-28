@@ -1,7 +1,7 @@
 
 using System;
 
-namespace GG.Data.Base
+namespace GGDataBase
 {
     /// <summary>
     /// Interface for telemetry; exposed to external classes to provide access to telemetry data.

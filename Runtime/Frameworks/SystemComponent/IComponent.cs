@@ -1,4 +1,4 @@
-namespace GG.Data.Base
+namespace GGDataBase
 {
     /// <summary>
     /// Defines a component of a system; inherit this interface for individual systems.

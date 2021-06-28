@@ -1,6 +1,6 @@
 {
     "name": "GG.Data.Base",
-    "rootNamespace": "GG.Data.Base",
+    "rootNamespace": "GGDataBase",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

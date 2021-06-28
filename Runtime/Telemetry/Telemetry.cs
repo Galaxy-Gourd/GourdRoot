@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace GG.Data.Base
+namespace GGDataBase
 {
     /// <summary>
     /// Base class for telemetry, defined as a stream of read-only data describing the current state of a module.

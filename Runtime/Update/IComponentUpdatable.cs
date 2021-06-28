@@ -1,4 +1,4 @@
-namespace GG.Data.Base
+namespace GGDataBase
 {
     public interface IComponentUpdatable : IComponent
     {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace GG.Data.Base
+namespace GGDataBase
 {
     /// <summary>
     /// Base definition for a system; a system is defined as a class that holds references to components, over

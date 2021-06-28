@@ -1,6 +1,6 @@
 using System;
 
-namespace GG.Data.Base
+namespace GGDataBase
 {
     /// <summary>
     /// Base class for core module; ensures proper loading after creation.

@@ -1,4 +1,4 @@
-namespace GG.Data.Base
+namespace GGDataBase
 {
     /// <summary>
     /// Defines the data passed to the client from the module after the module is initialized
