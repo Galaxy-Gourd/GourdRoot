@@ -1,6 +1,6 @@
 namespace GG.Data.Base
 {
-    public interface IModule
+    public interface IModule : IComponentUpdatable
     {
         #region PROPERTIES
 
@@ -10,12 +10,6 @@ namespace GG.Data.Base
         
         
         #region METHODS
-
-        /// <summary>
-        /// Ticks the module; implement with specific funtionality, or ignore if not applicable
-        /// </summary>
-        /// <param name="delta">Time (seconds) since previous tick</param>
-        void Tick(float delta);
 
         /// <summary>
         /// Destroys and cleans the module

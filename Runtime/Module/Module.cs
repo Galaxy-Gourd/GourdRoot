@@ -18,7 +18,7 @@ namespace GG.Data.Base
         #endregion VARIABLES
         
         
-        #region CONSTRUCTOR
+        #region CONSTRUCTION
 
         /// <summary>
         /// Constructs the module with the module data.
@@ -46,12 +46,12 @@ namespace GG.Data.Base
             }
         }
 
-        #endregion CONSTRUCTOR
+        #endregion CONSTRUCTION
 
 
         #region UPDATE
         
-        public virtual void Tick(float delta)
+        public virtual void DoUpdate(float delta)
         {
 
         }
