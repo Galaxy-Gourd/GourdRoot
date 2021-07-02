@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace GGDataBase
 {
@@ -14,6 +15,10 @@ namespace GGDataBase
         public string ID { get; set; }
 
         private readonly Action<T2>[] _callbacks;
+        private readonly List<string> _logCache = new List<string>();
+        private IModuleLogListenable _logListener;
+        private const string CONST_ModuleInitializedLogPrefix = "Module Initialized: ";
+        private const string CONST_CachedLogSuffix = " [CACHED LOG]";
 
         #endregion VARIABLES
         
@@ -27,6 +32,7 @@ namespace GGDataBase
         {
             _callbacks = callbacks;
             ID = data.ID;
+            Log(CONST_ModuleInitializedLogPrefix + data.ID);
         }
 
         /// <summary>
@@ -67,5 +73,30 @@ namespace GGDataBase
         }
 
         #endregion CLEANUP
+
+
+        #region DEBUG
+
+        protected void Log(string message)
+        {
+            if (_logListener == null)
+            {
+                _logCache.Add(message);
+                return;
+            }
+            
+            _logListener.OnModuleLog(message);
+        }
+        
+        void IModule.SetLogListener(IModuleLogListenable listener)
+        {
+            _logListener = listener;
+            foreach (string log in _logCache)
+            {
+                _logListener.OnModuleLog(log + CONST_CachedLogSuffix);
+            }
+        }
+
+        #endregion DEBUG
     }
 }

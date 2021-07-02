@@ -18,8 +18,8 @@ namespace GGDataBase
         public D CurrentData => _data;
         
         // Private
-        protected readonly D _data = new D();
-        private readonly List<Action<D>> _listeners = new List<Action<D>>();
+        protected readonly D _data = new();
+        private readonly List<Action<D>> _listeners = new();
 
         #endregion VARIABLES
 

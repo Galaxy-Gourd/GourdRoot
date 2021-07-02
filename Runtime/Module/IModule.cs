@@ -16,6 +16,11 @@ namespace GGDataBase
         /// </summary>
         void Cleanup();
 
+        /// <summary>
+        /// We can assign objects to receive logs from modules for further display/output
+        /// </summary>
+        void SetLogListener(IModuleLogListenable listener);
+
         #endregion METHODS
     }
 }
