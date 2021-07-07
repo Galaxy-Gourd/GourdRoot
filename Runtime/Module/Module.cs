@@ -18,7 +18,7 @@ namespace GGDataBase
         private readonly List<string> _logCache = new();
         private IModuleLogListenable _logListener;
         private const string CONST_ModuleInitializedLogPrefix = "Module Initialized: ";
-        private const string CONST_CachedLogSuffix = " [CACHED LOG]";
+        private const string CONST_CachedLogPrefix = "[CACHED] ";
 
         #endregion VARIABLES
         
@@ -93,7 +93,7 @@ namespace GGDataBase
             _logListener = listener;
             foreach (string log in _logCache)
             {
-                _logListener.OnModuleLog(log + CONST_CachedLogSuffix);
+                _logListener.OnModuleLog(CONST_CachedLogPrefix + log);
             }
         }
 
