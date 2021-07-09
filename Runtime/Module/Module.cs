@@ -15,7 +15,7 @@ namespace GGDataBase
         public string ID { get; set; }
 
         private readonly Action<T2>[] _callbacks;
-        private readonly List<string> _logCache = new();
+        private readonly List<string> _logCache = new List<string>();
         private IModuleLogListenable _logListener;
         private const string CONST_ModuleInitializedLogPrefix = "Module Initialized: ";
         private const string CONST_CachedLogPrefix = "[CACHED] ";
