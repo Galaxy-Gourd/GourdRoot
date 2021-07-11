@@ -13,6 +13,7 @@ namespace GGDataBase
         #region VARIABLES
 
         public string ID { get; set; }
+        public IModuleUpdatable Updater { get; set; }
 
         private readonly Action<T2>[] _callbacks;
         private readonly List<string> _logCache = new List<string>();

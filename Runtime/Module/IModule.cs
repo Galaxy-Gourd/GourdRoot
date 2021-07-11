@@ -5,6 +5,7 @@ namespace GGDataBase
         #region PROPERTIES
 
         string ID { get; set; }
+        IModuleUpdatable Updater { get; set; }
         
         #endregion PROPERTIES
         
