@@ -13,11 +13,6 @@ namespace GGDataBase
         #region METHODS
 
         /// <summary>
-        /// Called after the module has been installed completely
-        /// </summary>
-        void OnModulePostInstall();
-
-        /// <summary>
         /// Destroys and cleans the module
         /// </summary>
         void Cleanup();

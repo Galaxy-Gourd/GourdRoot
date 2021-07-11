@@ -36,11 +36,6 @@ namespace GGDataBase
             Log(CONST_ModuleInitializedLogPrefix + data.ID);
         }
 
-        public virtual void OnModulePostInstall()
-        {
-            
-        }
-
         /// <summary>
         /// After the module has finished initializing, we may optionally inform listeners with some data
         /// </summary>
