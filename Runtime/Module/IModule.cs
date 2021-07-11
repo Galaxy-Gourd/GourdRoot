@@ -5,7 +5,7 @@ namespace GGDataBase
         #region PROPERTIES
 
         string ID { get; set; }
-
+        
         #endregion PROPERTIES
         
         
