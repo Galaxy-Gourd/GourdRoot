@@ -18,9 +18,9 @@ namespace GGDataBase
         void OnModulePostInstall();
 
         /// <summary>
-        /// Destroys and cleans the module
+        /// Called after all other modules have been installed
         /// </summary>
-        void Cleanup();
+        void OnAllModulesInstalled();
 
         /// <summary>
         /// We can assign objects to receive logs from modules for further display/output
