@@ -17,6 +17,7 @@ namespace GGDataBase
         private readonly List<string> _logCache = new List<string>();
         private IModuleLogListenable _logListener;
         private const string CONST_ModuleInitializedLogPrefix = "Module Initialized: ";
+        private const string CONST_ModuleCleanupLogPrefix = "Module removed: ";
         private const string CONST_CachedLogPrefix = "[CACHED] ";
 
         #endregion VARIABLES
@@ -53,6 +54,11 @@ namespace GGDataBase
 
         }
         
+        public virtual void Cleanup()
+        {
+            Log(CONST_ModuleCleanupLogPrefix + ID);
+        }
+        
         #endregion UPDATE
 
 
@@ -77,7 +83,7 @@ namespace GGDataBase
                 _logListener.OnModuleLog(CONST_CachedLogPrefix + log);
             }
         }
-
+        
         #endregion DEBUG
     }
 }

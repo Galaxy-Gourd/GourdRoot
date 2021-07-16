@@ -1,7 +1,8 @@
 namespace GGDataBase
 {
-    public abstract class DataConfigModule : DataConfig
+    public class DataConfigModule : DataConfig
     {
         public string ID;
+        public ModulePersistence Persistence;
     }
 }
