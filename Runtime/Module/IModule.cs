@@ -8,7 +8,7 @@ namespace GGDataBase
 
         string ID { get; set; }
         IModuleUpdatable Updater { get; set; }
-        Action<float> OnUpdate { set; }
+        Action<float> OnUpdate { get; set; }
         
         #endregion PROPERTIES
         
