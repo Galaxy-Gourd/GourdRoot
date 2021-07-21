@@ -58,6 +58,7 @@ namespace GGDataBase
         public virtual void Cleanup()
         {
             Log(CONST_ModuleCleanupLogPrefix + ID);
+            OnUpdate = null;
         }
         
         #endregion UPDATE
