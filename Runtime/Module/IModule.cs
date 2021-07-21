@@ -1,3 +1,5 @@
+using System;
+
 namespace GGDataBase
 {
     public interface IModule : IComponentUpdatable
@@ -6,6 +8,7 @@ namespace GGDataBase
 
         string ID { get; set; }
         IModuleUpdatable Updater { get; set; }
+        Action<float> OnUpdate { set; }
         
         #endregion PROPERTIES
         

@@ -13,6 +13,7 @@ namespace GGDataBase
 
         public string ID { get; set; }
         public IModuleUpdatable Updater { get; set; }
+        public Action<float> OnUpdate { get; set; }
 
         private readonly List<string> _logCache = new List<string>();
         private IModuleLogListenable _logListener;
@@ -33,7 +34,7 @@ namespace GGDataBase
             ID = data.ID;
             Log(CONST_ModuleInitializedLogPrefix + data.ID);
         }
-
+        
         public virtual void OnModulePostInstall()
         {
             
@@ -51,7 +52,7 @@ namespace GGDataBase
         
         public virtual void DoUpdate(float delta)
         {
-
+            OnUpdate?.Invoke(delta);
         }
         
         public virtual void Cleanup()
