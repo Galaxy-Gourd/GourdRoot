@@ -31,7 +31,7 @@ namespace GGDataBase
         void SetLogListener(IModuleLogListenable listener);
 
         /// <summary>
-        /// When the mdule should be destroyed - this callback allows the module to clean itself up
+        /// When the module should be destroyed - this callback allows the module to clean itself up
         /// </summary>
         void Cleanup();
 

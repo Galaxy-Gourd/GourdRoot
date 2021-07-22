@@ -6,8 +6,8 @@ namespace GGDataBase
     /// <summary>
     /// Base class for core module; ensures proper loading after creation.
     /// </summary>
-    public abstract class Module<T1> : IModule
-        where T1 : DataConfigModule
+    public abstract class Module<T> : IModule
+        where T : DataConfigModule
     {
         #region VARIABLES
 
@@ -29,7 +29,7 @@ namespace GGDataBase
         /// <summary>
         /// Constructs the module with the module data.
         /// </summary>
-        protected Module(T1 data)
+        protected Module(T data)
         {
             ID = data.ID;
             Log(CONST_ModuleInitializedLogPrefix + data.ID);
