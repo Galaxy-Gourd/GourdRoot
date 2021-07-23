@@ -40,7 +40,7 @@ namespace GGDataBase
             
         }
 
-        public virtual void OnAllModulesInstalled()
+        public virtual void OnModulesReady()
         {
             
         }

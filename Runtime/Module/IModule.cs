@@ -23,7 +23,7 @@ namespace GGDataBase
         /// <summary>
         /// Called after all other modules have been installed
         /// </summary>
-        void OnAllModulesInstalled();
+        void OnModulesReady();
 
         /// <summary>
         /// We can assign objects to receive logs from modules for further display/output
